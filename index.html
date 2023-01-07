@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karma:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/import.css" />
+    <title>Food blog</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- ========= start header========== -->
+      <header class="container__ver2" id="myHeader">
+        <ul class="toLeft__list" id="my__sidebar">
+          <li class="toLeft__item" onclick="close__sibar()">
+            <span class="toLeft__text">Close Menu</span>
+          </li>
+          <li class="toLeft__item" onclick="close__sibar()">
+            <span class="toLeft__text">Food</span>
+          </li>
+          <li class="toLeft__item" onclick="close__sibar()">
+            <span class="toLeft__text">About</span>
+          </li>
+        </ul>
+        <div class="header__left toLeft__select">
+          <button class="dropdown__selected" onclick="open__sidebar()">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="header__center">My Food</div>
+        <div class="header__right">Mail</div>
+      </header>
+      <!-- ========= end header========== -->
+      <!-- ========= start page content======== -->
+      <div class="content">
+        <!-- ====== top ====== -->
+        <div class="content__top">
+          <div class="content__item">
+            <div class="content__item--img">
+              <img class="w__item" src="./img/sandwich.jpg" alt="sandwich" />
+            </div>
+            <div class="content__item--title">
+              <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            </div>
+            <div class="content__item--text">
+              <p>
+                Just some random text, lorem ipsum text praesent tincidunt ipsum
+                lipsum.
+              </p>
+            </div>
+          </div>
+          <div class="content__item">
+            <div class="content__item--img steak">
+              <img class="w__item" src="./img/steak.jpg" alt="steak" />
+            </div>
+            <div class="content__item--title">
+              <h2>Let Me Tell You About This Steak</h2>
+            </div>
+            <div class="content__item--text">
+              <p>
+                Just some random text, lorem ipsum text praesent tincidunt ipsum
+                lipsum.
+              </p>
+            </div>
+          </div>
+          <div class="content__item">
+            <div class="content__item--img">
+              <img src="./img/cherries.jpg" alt="" class="w__item" />
+            </div>
+            <div class="content__item--title">
+              <h2>Cherries, interrupted</h2>
+            </div>
+            <div class="content__item--text">
+              <p>
+                Just some random text, lorem ipsum text praesent tincidunt ipsum
+                lipsum.
+              </p>
+            </div>
+          </div>
+          <div class="content__item">
+            <div class="content__item--img">
+              <img src="./img/wine.jpg" alt="" class="w__item" />
+            </div>
+            <div class="content__item--title">
+              <h2>Once Again, Robust Wine and Vegetable Pasta</h2>
+            </div>
+            <div class="content__item--text">
+              <p>
+                Just some random text, lorem ipsum text praesent tincidunt ipsum
+                lipsum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ======bottom======== -->
+        <div class="content__bottom">
+          <div class="content__item">
+            <div class="content__item--img">
+              <img class="w__item" src="./img/popsicle.jpg" alt="" />
+            </div>
+            <div class="content__item--title">
+              <h2>All I Need Is a Popsicle</h2>
+            </div>
+            <div class="content__item--text">
+              <p>
+                Just some random text, lorem ipsum text praesent tincidunt ipsum
+                lipsum.
+              </p>
+            </div>
+          </div>
+          <div class="content__item">
+            <div class="content__item--img">
+              <img class="w__item" src="./img/salmon.jpg" alt="" />
+            </div>
+            <div class="content__item--title">
+              <h2>Salmon For Your Skin</h2>
+            </div>
+            <div class="content__item--text">
+              <p>
+                Just some random text, lorem ipsum text praesent tincidunt ipsum
+                lipsum.
+              </p>
+            </div>
+          </div>
+          <div class="content__item">
+            <div class="content__item--img">
+              <img class="w__item" src="./img/sandwich.jpg" alt="" />
+            </div>
+            <div class="content__item--title">
+              <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            </div>
+            <div class="content__item--text">
+              <p>
+                Just some random text, lorem ipsum text praesent tincidunt ipsum
+                lipsum.
+              </p>
+            </div>
+          </div>
+          <div class="content__item">
+            <div class="content__item--img">
+              <img class="w__item" src="./img/croissant.jpg" alt="" />
+            </div>
+            <div class="content__item--title">
+              <h2>Le French</h2>
+            </div>
+            <div class="content__item--text">
+              <p>
+                Just some random text, lorem ipsum text praesent tincidunt ipsum
+                lipsum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======= bar======= -->
+      <div class="content__bar">
+        <i class="fa fa-angle-double-left fz__icon"></i>
+        <a class="bar bar1" href="">1</a>
+        <a class="bar bar2" href="">2</a>
+        <a class="bar bar3" href="">3</a>
+        <a class="bar bar4" href="">4</a>
+        <i class="fa fa-angle-double-right fz__icon"></i>
+      </div>
+
+      <!-- ========= end page content======== -->
+      <hr class="line__page" />
+      <!-- ======== start about me======= -->
+      <div class="about ">
+        <div class="about__title">About Me, The Food Man</div>
+        <div class="about__img">
+          <img class="img__chef" src="./img/chef.jpg" alt="" />
+        </div>
+        <div class="about__content">
+          <h1 class="about__slogan">I am Who I Am!</h1>
+          <p class="about__said">With Passion For Real, Good Food</p>
+          <p>
+            Just me, myself and I, exploring the universe of unknownment. I have
+            a heart of love and an interest of lorem ipsum and mauris neque quam
+            blog. I want to share my world with you. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies congue gravida diam non fringilla. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies congue gravida diam non fringilla.
+          </p>
+        </div>
+      </div>
+      <!-- ======== end about me======= -->
+      <hr class="line__page" />
+      <!-- ============ start footer======== -->
+      <footer class="container">
+        <div class="footer">
+          <div class="footer__title">FOOTER</div>
+          <div class="footer__content">
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam non
+            fringilla.
+          </div>
+          <div class="footer__source">Powered by w3.css</div>
+        </div>
+        <div class="blog">
+          <div class="blog__title">BLOG POSTS</div>
+          <div class="blog__first--item">
+            <div class="blog__img">
+              <img src="./img/workshop.jpg" alt="" />
+            </div>
+            <div>
+              <div class="blog__info">Lorem</div>
+              <div class="blog__content">Sed mattis nunc</div>
+            </div>
+          </div>
+          <hr class="line__blog" />
+          <div class="blog__first--item">
+            <div class="blog__img">
+              <img src="./img/gondol.jpg" alt="" />
+            </div>
+            <div>
+              <div class="blog__info">Ipsum</div>
+              <div class="blog__content">Praes tinci sed</div>
+            </div>
+          </div>
+        </div>
+        <div class="tag">
+          <div class="tag__title">POPULAR TAGS</div>
+          <div class="tag__link">
+            <span class="tag__address">Travel</span>
+            <span class="tag__address">New York</span>
+            <span class="tag__address">Dinner</span>
+            <span class="tag__address">Salmon</span>
+            <span class="tag__address">France</span>
+            <span class="tag__address">Drinks</span>
+            <span class="tag__address">Ideas</span>
+            <span class="tag__address">Flavors</span>
+            <span class="tag__address">Cuisine</span>
+            <span class="tag__address">Chicken</span>
+            <span class="tag__address">Dressing</span>
+            <span class="tag__address">Fried</span>
+            <span class="tag__address">Fish</span>
+            <span class="tag__address">Duck</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- ============ end footer======== -->
+    <!-- ====== open, Close sidebar -->
+    <script>
+      function close__sibar() {
+        document.getElementById("my__sidebar").style.display = "none";
+      }
+      function open__sidebar() {
+        document.getElementById("my__sidebar").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

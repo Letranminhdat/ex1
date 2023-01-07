@@ -1,0 +1,241 @@
+/* ============start header============ */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  position: fixed;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  margin: 0 auto;
+  /* max-width: 80%; */
+  background-color: white;
+}
+.header__left {
+  display: inline-block;
+}
+.container__ver2 .toLeft__list {
+  display: none;
+  animation-name: animateLeft;
+  animation: animateLeft 0.2s ease-in;
+}
+.header__left button {
+  position: relative;
+  font-size: 23px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: rgb(51, 51, 51);
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+  overflow: hidden;
+}
+
+.header__left button:hover {
+  background-color: var(--primary);
+}
+.toLeft__item {
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.toLeft__list {
+  position: absolute;
+  background-color: white;
+  height: 1000px;
+  top: 0;
+  box-shadow: 0 0 20px 5px rgba(233, 233, 233, 0.203);
+  z-index: 1;
+  transition: background-color 0.2s linear;
+  transform: translate(-25%, -5px);
+}
+
+.toLeft__list :hover {
+  background-color: var(--primary);
+}
+.toLeft__item {
+  width: 600px;
+  z-index: -1;
+  font-size: 23px;
+  /* animation-name: animateLeft;
+    animation: animateLeft 1s linear; */
+}
+.toLeft__item span {
+  padding: 10px;
+}
+
+/* ============Start page content=============== */
+.content {
+  width: 100%;
+  margin-top: 100px;
+}
+.content__top {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+}
+.content__item {
+  padding: 0 15px;
+}
+
+.content__item .content__item--img .w__item {
+  width: 100%;
+}
+
+.content__item .content__item--title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 0;
+}
+.content__item .content__item--text {
+  font-size: 15px;
+  text-align: center;
+  padding: 8px 0;
+}
+.content__bottom {
+  display: flex;
+  flex: wrap;
+  justify-content: space-between;
+}
+.content__bar {
+  padding: 30px;
+  margin: auto;
+  text-align: center;
+}
+.content__bar .bar {
+  text-decoration: none;
+  color: black;
+  padding: 8px 15px;
+}
+.bar2 .bar3 .bar4 .fz__icon a i :hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.bar1 :hover {
+  background-color: var(--primary);
+  color: black;
+}
+.content__bar .bar1 {
+  color: white;
+  background-color: black;
+}
+
+.content__bar .fz__icon {
+  font-size: 8px;
+  padding: 0 15px;
+}
+
+/* ================ end page content============= */
+
+/* <!-- ======== start about me======= --> */
+.about {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.about__title {
+  font-size: 25px;
+  margin: 50px 0;
+}
+.about__slogan {
+  margin: 20px 0;
+  font-size: 20px;
+}
+.about__said {
+  font-style: italic;
+  margin: 20px 0;
+  font-size: 18px;
+}
+/* <!-- ======== end about me======= --> */
+/* ============= start footer============= */
+footer {
+  display: flex;
+  flex: wrap;
+}
+.footer {
+  max-width: 380px;
+  padding: 10px 10px;
+}
+.footer__title {
+  font-size: 25px;
+  padding: 20px 0;
+  font-weight: 500;
+}
+.footer__source {
+  font-size: 15px;
+  padding: 20px 0;
+}
+.blog {
+  width: 380px;
+}
+.blog__first--item {
+  display: flex;
+  flex: wrap;
+}
+.blog__title {
+  font-size: 25px;
+  padding: 20px 0;
+  font-weight: 500;
+}
+.blog__img img {
+  width: 50px;
+  padding: 0 10px;
+}
+.blog__info {
+  font-weight: 500;
+  font-size: 20px;
+}
+.tag {
+  margin: 0 20px;
+}
+.tag__title {
+  font-size: 25px;
+  padding: 20px 2;
+  font-weight: 500;
+}
+.line__blog {
+  border-top: 1px solid var(--primary);
+  width: 360px;
+  padding: 5px 0;
+}
+.tag__link {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.tag__link span {
+  flex-grow: 15px;
+  padding: 1px 10px;
+  background-color: rgb(95, 95, 95);
+  font-size: 12px;
+  margin-bottom: 16px !important;
+
+}
+.tag__link span:first-child {
+  font-size: 14px;
+  background-color: black;
+}
+
+
+/* ============= end footer============= */
+@keyframes animateLeft {
+  from {
+    opacity: 0;
+    left: -600px;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}

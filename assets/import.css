@@ -1,0 +1,10 @@
+@import url(./index.css);
+@import url(./reset.css);
+@import url(./responsive.css);
+:root {
+    --primary:rgb(211, 210, 210);
+
+}
+body{
+    position: relative;
+}

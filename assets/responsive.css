@@ -1,0 +1,28 @@
+@media only screen and (max-width: 600px){
+.container {
+    flex-direction: column;
+}
+#my__sidebar {
+    width: 50%;
+}
+.toLeft__item {
+    width: 90%;
+}
+.content__top {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.content__bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.img__chef {
+    width: 100%;
+}
+.tag {
+    margin: 0;
+}
+}
+    
